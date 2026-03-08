@@ -1,0 +1,34 @@
+<template>
+    <lightning-card title="Voice to Agentforce">
+        <div class="slds-p-around_medium">
+
+            <lightning-button
+                label="🎤 Start Speaking"
+                onclick={startListening}
+                variant="brand">
+            </lightning-button>
+
+            <p class="slds-m-top_medium">
+                <b>Transcript:</b> {transcript}
+            </p>
+
+            <p class="slds-m-top_medium">
+            <lightning-button
+                label="Send to Agent"
+                onclick={sendToAgent}
+                class="slds-m-top_small">
+            </lightning-button>
+            </p>
+
+            <p class="slds-m-top_medium">
+            <b>Agent Response:</b> {agentResponse}
+            </p>
+
+        </div>
+
+       
+        
+         
+
+    </lightning-card>
+</template>
